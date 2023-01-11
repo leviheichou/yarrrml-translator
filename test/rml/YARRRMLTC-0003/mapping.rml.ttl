@@ -8,11 +8,11 @@
 
 <#student_0> a rr:TriplesMap;
 
-	rml:logicalTable [
-		a rml:LogicalTable;
+	rml:logicalSource [
+		a rml:LogicalSource;
 		rml:query "Select ('Student' || \"ID\" ) AS StudentId , \"ID\" , \"Name\" from \"Student\" ";
-		rr:sqlVersion rr:SQL2008
-        rml:referenceFormulation q1:CSV
+		rml:referenceFormulation ql:CSV;
+		rr:sqlVersion rr:MYSQL;  
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;

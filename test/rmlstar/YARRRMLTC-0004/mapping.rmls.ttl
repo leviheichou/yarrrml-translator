@@ -14,7 +14,7 @@
 	rml:logicalSource [
 		a rml:LogicalSource;
 		rml:source "data.csv";
-		rml:referenceFormulation ql:CSV
+		rml:referenceFormulation ql:CSV;
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;

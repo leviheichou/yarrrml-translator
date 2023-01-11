@@ -15,11 +15,11 @@
 
 <#venue_0> a rr:TriplesMap;
 
-	rml:logicalTable [
-		a rml:LogicalTable;
+	rml:logicalSource [
+		a rml:LogicalSource;
 		rml:query "Select * from \"Venue4\" ";
-		rr:sqlVersion rr:SQL2008
-        rml:referenceFormulation q1:CSV
+		rml:referenceFormulation ql:CSV;
+		rr:sqlVersion rr:MYSQL;
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
